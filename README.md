@@ -1,7 +1,9 @@
 
 ## djDiskRW | Reading and Writing Zero Disk Sectors
 A small C++ tool I wrote for reading and writing all sectors on a disk. Mainly for fun.
+
 ![UI Example](ui_example.png)
+
 When buying a new or used disk, there may be undiscovered bad sectors (beyond acceptable reserve sectors tagged by OEM) that SMART will only report about after attempting to use them. This program lets me easily read every sector on a new drive and then check SMART to see if anything was detected, and more confidently decide it's truly ready for dependable usage. Before selling or discarding a disk, I may also want to securely(*) wipe it by writing zero to all sectors.
 
 ## Technical notes 
