@@ -19,7 +19,7 @@ Uses ~3 MB ram. File is a ~410 kB sized portable x64 Win32 program, no install o
 
 * When detecting drives, a red colored note will indicate the index 0 disk, as usually system disk. Indexes and letters are not reliable 100% indicators, even less when used from live boot images. So don't trust the index. The responsibility of choosing a correct target disk, falls on the user. 
 
-**Of course, I've tested writing to a live booted system disk on a test computer from within Windows 11:** 
+**Of course, I've tested writing to a live booted system disk on a test computer from within Windows 11:**   
 Start sectors got written before I got access denied, and effectively ruined the partition table. This was very easily fixable via AOMEI Partition Assistant I have on my USB iso tool stick. I converted back to GPT and rebuilt the boot partition with bcdboot. All fixed in under 5 minutes. It was very limited how much damage I was allowed to do on a live online system. 
 
 ## Additional notes 
